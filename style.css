@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin: auto;
+    width: 300px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input, select, button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+#result {
+    margin: 20px auto;
+    width: 300px;
+    text-align: left;
+}
