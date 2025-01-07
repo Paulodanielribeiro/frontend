@@ -7,22 +7,20 @@
 </head>
 <body>
     <h1>Cálculo de Impostos para Empresas</h1>
-    <form id="taxForm">
+    <form method="GET" action="http://localhost/php/index.php">
         <label for="companyName">Nome da Empresa:</label>
-        <input type="text" id="companyName" required><br><br>
+        <input type="text" name="companyName" id="companyName" required><br><br>
         <label for="cnpj">CNPJ:</label>
-        <input type="text" id="cnpj" required pattern="\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}"><br><br>
+        <input type="text" name="cnpj" id="cnpj" required pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}"><br><br>
         <label for="invoiceValue">Valor da Nota Fiscal:</label>
-        <input type="number" id="invoiceValue" required min="0"><br><br>
+        <input type="number" name="invoiceValue" id="invoiceValue" required min="0"><br><br>
         <label for="taxType">Tipo de Imposto:</label>
-        <select id="taxType">
+        <select name="taxType" id="taxType">
             <option value="iss">ISS</option>
             <option value="icms">ICMS</option>
             <option value="pis_cofins">PIS/COFINS</option>
         </select><br><br>
-        <button type="button" onclick="calculateTax()">Calcular</button>
+        <button type="submit">Calcular</button>
     </form>
-    <div id="result"></div>
-    <script src="app.js"></script>
 </body>
 </html>

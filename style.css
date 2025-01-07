@@ -21,9 +21,3 @@ input, select, button {
     margin: 5px 0;
     padding: 8px;
 }
-
-#result {
-    margin: 20px auto;
-    width: 300px;
-    text-align: left;
-}
